@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #19181f;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 32px;
+    background-color: #7159c1;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: rgba(109, 40, 143, 0.993);
+    font-size: 19px;
+    transition: color 0.5s;
+}
+
+
+/*==========Parte 02 Sobre==========*/
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 5px solid rgb(122, 33, 173);
+    margin-bottom: 32px;
+    height: 300px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#cursos-lista ul li {
+    list-style-type: armenian;
+    margin-right: 30px;
+    display: inline;
+}
+
+#links-footer a {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+/*======P3 CARDS ========*/
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.card {
+    background-color: rgb(53, 31, 66);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card_image_container img {
+    width: 100%;
+    height: 200px;
+}
+
+.card_content,
+card_info {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+    background-color: rgb(27, 10, 46);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+/* ==============MODAL P3============*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: green;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 6%;
+}
+
+
+/*============MODAL ATIVO P3==============*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
